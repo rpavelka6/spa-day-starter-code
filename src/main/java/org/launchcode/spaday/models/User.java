@@ -13,7 +13,7 @@ public class User {
     private String email;
 
     @NotEmpty
-    @Size(min=6)
+    @Size(min=6, message="Password must be at least 6 characters")
     private String password;
 
     public User() {

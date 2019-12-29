@@ -26,7 +26,7 @@ public class UserController {
 //        model.addAttribute("email", user.getEmail());
 
         if (errors.hasErrors()) {
-            model.addAttribute("errorMsg", "Bad data");
+            model.addAttribute("errorMsg", "Errors with entries");
             return "user/add";
         }
         if (user.getPassword().equals(verify)) {
